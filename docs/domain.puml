@@ -1,0 +1,42 @@
+@startuml
+
+package usecases.createorder {
+    interface CreateOrderUseCase {
+        + execute()
+    }
+
+    class CreateOrderUseCaseImpl extends CreateOrderUseCase {
+        + execute()
+    }
+
+    interface CreateOrderPresenter {
+        + execute()
+    }
+}
+
+package entities {
+    class Order <<Aggregate Root>> {
+        + addToCart(ean: String)
+    }
+
+    class Cart {
+
+    }
+
+    class CartPosition {
+
+    }
+}
+
+package repository {
+    interface OrderRepository {
+        + save(order: Order)
+    }
+}
+
+CreateOrderUseCaseImpl --> Order
+CreateOrderUseCaseImpl --> CreateOrderPresenter
+CreateOrderUseCaseImpl --> OrderRepository
+OrderRepository --> Order
+
+@enduml

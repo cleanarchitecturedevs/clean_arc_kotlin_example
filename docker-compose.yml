@@ -1,0 +1,12 @@
+version: '3.9'
+services:
+  db:
+    image: "postgres:16-alpine"
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: 0a98dfa09dhf87a0d9h80a7d98fha70d
+      POSTGRES_DB: order_management
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./ordermanagement-jdbc/src/main/resources/db/init.sql:/docker-entrypoint-initdb.d/init.sql
