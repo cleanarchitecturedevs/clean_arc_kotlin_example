@@ -13,7 +13,7 @@ import java.util.*
 class JedisOrderRepository(private val jedis: Jedis) : OrderRepository {
 
     override fun byId(id: UUID): Order? {
-        val result = jedis.get("orders_$id") ?: return null
+        val result = jedis["orders_$id"] ?: return null
         val redisModel: OrderRedisModel = Json.decodeFromString(result)
 
         return Order(
@@ -40,7 +40,7 @@ class JedisOrderRepository(private val jedis: Jedis) : OrderRepository {
                 )
             }.toMutableList())
 
-        jedis.set("orders_${order.id}", Json.encodeToString(redisModel))
+        jedis["orders_${order.id}"] = Json.encodeToString(redisModel)
     }
 }
 
