@@ -12,7 +12,7 @@ repositories {
     mavenCentral()
 }
 
-val testContainersVersion = "1.19.8"
+val testContainersVersion = "1.21.3"
 
 dependencies {
     implementation(project(":ordermanagement-domain"))
