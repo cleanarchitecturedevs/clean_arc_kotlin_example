@@ -1,6 +1,6 @@
 plugins {
-    kotlin("jvm") version "1.9.21"
-    kotlin("plugin.serialization") version "1.9.21"
+    kotlin("jvm") version "2.0.21"
+    kotlin("plugin.serialization") version "2.0.21"
 }
 
 group = "org.example"
@@ -18,7 +18,7 @@ val testContainersVersion = "1.19.3"
 
 dependencies {
     implementation(project(":ordermanagement-domain"))
-    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json-jvm:1.6.2")
+    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json-jvm:1.7.3")
     implementation("com.zaxxer:HikariCP:5.1.0")
     implementation("org.postgresql:postgresql:42.7.1")
     testImplementation("org.testcontainers:testcontainers:$testContainersVersion")
