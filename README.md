@@ -1,0 +1,5 @@
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=cleanarchitecturedevs_clean_arc_kotlin_example&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=cleanarchitecturedevs_clean_arc_kotlin_example)
+[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=cleanarchitecturedevs_clean_arc_kotlin_example&metric=bugs)](https://sonarcloud.io/summary/new_code?id=cleanarchitecturedevs_clean_arc_kotlin_example) 
+[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=cleanarchitecturedevs_clean_arc_kotlin_example&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=cleanarchitecturedevs_clean_arc_kotlin_example)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=cleanarchitecturedevs_clean_arc_kotlin_example&metric=coverage)](https://sonarcloud.io/summary/new_code?id=cleanarchitecturedevs_clean_arc_kotlin_example)
+[![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=cleanarchitecturedevs_clean_arc_kotlin_example&metric=duplicated_lines_density)](https://sonarcloud.io/summary/new_code?id=cleanarchitecturedevs_clean_arc_kotlin_example)
